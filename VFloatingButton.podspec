@@ -8,4 +8,5 @@ Pod::Spec.new do |s|
     s.source = { :git => 'https://github.com/velthune/VFloatingButton.git', :tag => s.version.to_s }
     s.platform     = :ios, '8.0'
     s.source_files = 'VFloatingButton/source/*.swift'
+    s.resources = 'images/VFloatingButton.gif'
 end
