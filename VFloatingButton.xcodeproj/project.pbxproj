@@ -12,7 +12,6 @@
 		75F3FA971F765A98004BADA3 /* VFloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3FA921F765A98004BADA3 /* VFloatingButton.swift */; };
 		75F3FA981F765A98004BADA3 /* VFloatingButtonProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3FA931F765A98004BADA3 /* VFloatingButtonProperties.swift */; };
 		75F3FA991F765A98004BADA3 /* UI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3FA941F765A98004BADA3 /* UI+Extensions.swift */; };
-		75F3FA9E1F765C11004BADA3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75F3FA9D1F765C11004BADA3 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +103,7 @@
 				75F3FA7F1F76599B004BADA3 /* Frameworks */,
 				75F3FA801F76599B004BADA3 /* Headers */,
 				75F3FA811F76599B004BADA3 /* Resources */,
+				75F3FAA71F7675B9004BADA3 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -153,11 +153,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75F3FA9E1F765C11004BADA3 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75F3FAA71F7675B9004BADA3 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		75F3FA7E1F76599B004BADA3 /* Sources */ = {

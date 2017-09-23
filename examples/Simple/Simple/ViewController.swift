@@ -115,7 +115,9 @@ class ViewController: UIViewController, VFloatingButtonDelegate, UITableViewDele
     // MARK: - IBActions -
     
     @IBAction func didTapOnButton(sender: AnyObject) {
-        let button = sender as! UIButton
+        guard let button = sender as? UIButton else {
+            return
+        }
         if self.floatingButton.isVisible() {
             self.floatingButton.hide(animated: true)
             button.setTitle("Show FAB", for: .normal)

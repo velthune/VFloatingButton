@@ -276,7 +276,7 @@ open class VFloatingButton: UIView, UIScrollViewDelegate {
         UIView.animate(withDuration: 0.6, animations: {
             self.transform = CGAffineTransform(scaleX: 20, y: 20)
             self.alpha = 0.0
-        }, completion: { (finish: Bool) in
+        }, completion: { (_: Bool) in
             self.delegate?.floatingButtonDidDisappear?(floatingButton: self)
         })
         self.layoutIfNeeded()
@@ -361,12 +361,12 @@ open class VFloatingButton: UIView, UIScrollViewDelegate {
         }
         let previousDirection = self.scrollDirection
         let currentVerticalOffset = scrollView.contentOffset.y
-        if (self.lastContentOffset > currentVerticalOffset) {
+        if self.lastContentOffset > currentVerticalOffset {
             self.scrollDirection = .up
             if previousDirection != self.scrollDirection {
                 self.show(animated: true)
             }
-        } else if (self.lastContentOffset < currentVerticalOffset) {
+        } else if self.lastContentOffset < currentVerticalOffset {
             self.scrollDirection = .down
             if previousDirection != self.scrollDirection {
                 self.hide(animated: true)

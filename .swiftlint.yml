@@ -1,0 +1,7 @@
+# rule identifiers to exclude from running
+disabled_rules:
+  - trailing_whitespace
+  - line_length
+type_body_length:
+- 380 # warning
+- 400 # error
