@@ -1,0 +1,37 @@
+*~
+.DS_Store
+
+# Merge files
+*.orig
+
+# Binaries
+*.dylib
+*.a
+*.o
+*.d
+*.zip
+
+# XCode
+*.bak
+xcuserdata/
+project.xcworkspace
+*.xccheckout
+DerivedData
+
+# xcpretty
+build.log
+
+## Specific to RubyMotion:
+.dat*
+.repl_history
+build/
+
+## Documentation cache and generated files:
+/.yardoc/
+/_yardoc/
+/doc/
+/rdoc/
+
+## Environment normalisation:
+/.bundle/
+/lib/bundler/man/

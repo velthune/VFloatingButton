@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Simple" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhK-sE-4vg">
+                                <state key="normal" title="Hide FAB"/>
+                                <connections>
+                                    <action selector="didTapOnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RCP-9F-Ooj"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m6y-sZ-ZIZ">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Q4C-Eq-6Pd"/>
+                                    <constraint firstAttribute="height" constant="300" id="cCv-c5-yuQ"/>
+                                </constraints>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kao-q8-Tyn">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entry animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrO-MD-B0t">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exit animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ooa-Jh-R6S">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WhK-sE-4vg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="6SK-H8-Wn9"/>
+                            <constraint firstAttribute="trailing" secondItem="kao-q8-Tyn" secondAttribute="trailing" id="72H-tb-JpD"/>
+                            <constraint firstItem="Ooa-Jh-R6S" firstAttribute="leading" secondItem="kao-q8-Tyn" secondAttribute="leading" id="E0Q-0I-VMB"/>
+                            <constraint firstItem="kao-q8-Tyn" firstAttribute="leading" secondItem="m6y-sZ-ZIZ" secondAttribute="trailing" id="P7b-dz-Pld"/>
+                            <constraint firstItem="m6y-sZ-ZIZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pwu-uu-8Rk"/>
+                            <constraint firstItem="kao-q8-Tyn" firstAttribute="height" secondItem="m6y-sZ-ZIZ" secondAttribute="height" id="RrV-L9-jBS"/>
+                            <constraint firstItem="hrO-MD-B0t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="aCx-82-b8z"/>
+                            <constraint firstItem="WhK-sE-4vg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="dDb-jW-IrH"/>
+                            <constraint firstItem="Ooa-Jh-R6S" firstAttribute="top" secondItem="hrO-MD-B0t" secondAttribute="top" id="fLH-vL-lFW"/>
+                            <constraint firstItem="hrO-MD-B0t" firstAttribute="top" secondItem="WhK-sE-4vg" secondAttribute="bottom" constant="1" id="lCe-XX-KWL"/>
+                            <constraint firstItem="kao-q8-Tyn" firstAttribute="top" secondItem="m6y-sZ-ZIZ" secondAttribute="top" id="qY7-nV-b3b"/>
+                            <constraint firstItem="m6y-sZ-ZIZ" firstAttribute="top" secondItem="hrO-MD-B0t" secondAttribute="bottom" constant="8" id="wxK-ag-bTX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="WhK-sE-4vg" id="jci-JU-Xbf"/>
+                        <outlet property="tableEntryAnimation" destination="m6y-sZ-ZIZ" id="YLf-NP-AFB"/>
+                        <outlet property="tableExitAnimation" destination="kao-q8-Tyn" id="vTA-xF-4la"/>
+                        <outlet property="tableViewWidthConstraint" destination="Q4C-Eq-6Pd" id="Pzu-LZ-aVB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="317"/>
+        </scene>
+    </scenes>
+</document>
