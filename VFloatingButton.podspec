@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
         'SWIFT_VERSION' => '3.0',
     }
 
-    s.source_files = 'source/*.swift'
+    s.source_files = 'VFloatingButton/source/*.swift'
 end
