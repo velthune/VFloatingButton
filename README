@@ -38,7 +38,7 @@ VFloatingButton behaviour is highly customizable: for instance you can attach FA
 Configure your podfile adding this line:
 
 ```ruby
-pod 'VFloatingButton', :git => 'https://github.com/velthune/VFloatingButton'
+pod 'VFloatingButton'
 ```   
      
 Then run 'pod install'.
